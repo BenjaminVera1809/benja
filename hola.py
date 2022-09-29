@@ -16,7 +16,7 @@ if (a==2):
     print(" \n Hola",Nombre)
     
     print("Has Iniciado la Carrera: ")
-    Hora = float(input("Has Subido a la (Hora):"))
+    Hora = float(input("Has Subido a las (Hora):"))
     min = float(input("Con Min: "))
     pm = input("PM o AM?: ")
     Pago  = 0
@@ -33,34 +33,33 @@ while (c==1):
         print("Vas Viajando al: ",Latitud,"\n con una Distacion de recorrido de: ",Longitud)
         print("Vas a una velocidad de X KM/h: ")
         acelerar= int(input("Deseas Accelerar (1.Si 2.No): "))
-
+    
         while (acelerar==1):
               acelerar=1
               Velocidad = Velocidad + 10
               Longitud = Longitud + 10
               min = min + 5
               Pago = Pago + 130
-              print("Te encuentra A la Velocidad de: ",Velocidad, "KM/H")
+              print("Te encuentra A la Velocidad de: ",Velocidad,"KM/h")
               acelerar= int(input("Desear seguir Acelerando (1.Si 2.No) "))
         if (min== 60):
                   hora = hora + 1
                   min = 0
         
-        print("Vas A una Velocidad de: ",Velocidad)
-        
+        print("Vas A una Velocidad de: ",Velocidad, "KM/h")
+    
         print ("1=Oeste/ 2=Este")
-        girar = int(input("Deseas Girar? (1.si 2.no)"))
-        
+        girar = int(input("Deseas Girar? (1.Si 2.No)"))
+    
         while (girar==1):
-                 
                  direccion=(input("(Viras 1.Oeste o 2.Este): "))
                  print("Vas al: ",Latitud,"Has Girado hacia la: ",direccion)
-                 print("Has Girado en el", direccion, "cual fuiste a 5 km/h")
+                 print("Has Girado en el cual fuiste a 5 km/h ")
                  Longitud = Longitud + 5
                  Pago = Pago + 75
                  girar = 2
         if (girar==2):
-             c=int(input("Te Preguntan ¿Llegaste a tu Destino? (1.no, 2.si) "))
+             c=int(input("Te Preguntan ¿Llegaste a tu Destino? (1.No 2.si) "))
     
 if (c==2):
     print("Has Viajado en total: ",Longitud,"KM")
